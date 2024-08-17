@@ -126,6 +126,46 @@ p {
     margin-top: 30px; /* Adjust as needed */
 }
 
+.facebook-plugin iframe {
+    width: 100%;
+    max-width: 340px; /* Maximum width for larger screens */
+    height: 500px;
+    border: none;
+    overflow: hidden;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .facebook-plugin iframe {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em; /* Reduce font size for very small screens */
+    }
+
+    p {
+        font-size: 1.2em; /* Reduce font size for very small screens */
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .facebook-plugin iframe {
+        height: 300px; /* Further adjust height for very small screens */
+    }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
